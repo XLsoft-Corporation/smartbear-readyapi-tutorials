@@ -9,6 +9,34 @@ ReadyAPIユーザーガイドの中で、クイックスタート／チュート
 [https://support.smartbear.com/readyapi/docs/get-started.html](https://support.smartbear.com/readyapi/docs/get-started.html)
 
 
+## 目次
+
+- [ReadyAPIハンズオンセミナー](#readyapiハンズオンセミナー)
+  - [Web API の基礎](#web-api-の基礎)
+    - [API とは](#api-とは)
+    - [基本概念](#基本概念)
+  - [機能テスト](#機能テスト)
+    - [1) 機能テストの作成](#1-機能テストの作成)
+    - [2) テストプロジェクトの探索](#2-テストプロジェクトの探索)
+    - [3) 機能テストの変更](#3-機能テストの変更)
+    - [4) 機能テストの実行](#4-機能テストの実行)
+    - [5) 機能テストにアサーションを追加](#5-機能テストにアサーションを追加)
+  - [データドリブンテスト](#データドリブンテスト)
+    - [1) プロジェクト作成](#1-プロジェクト作成)
+    - [2) データソース追加](#2-データソース追加)
+    - [3) データソースの設定](#3-データソースの設定)
+    - [4) リクエストの設定](#4-リクエストの設定)
+    - [5) テストの実行と検証](#5-テストの実行と検証)
+  - [負荷テスト](#負荷テスト)
+    - [1) 新規負荷テストの作成](#1-新規負荷テストの作成)
+    - [2) 負荷テストエディターインターフェースの概要](#2-負荷テストエディターインターフェースの概要)
+    - [3) 作成した負荷テストの実行](#3-作成した負荷テストの実行)
+    - [4) テスト結果の表示](#4-テスト結果の表示)
+    - [5) 負荷テストの変更](#5-負荷テストの変更)
+    - [6) 負荷テストへのアサーションの追加](#6-負荷テストへのアサーションの追加)
+
+
+<div style="page-break-before:always"></div>
 
 
 
@@ -17,9 +45,14 @@ ReadyAPIユーザーガイドの中で、クイックスタート／チュート
 
 
 
-## Web API の基礎<a id="anchor0"></a>
 
-### API とは<a id="anchor0-1"></a>
+<a id="anchor0"></a>
+
+## Web API の基礎
+
+<a id="anchor0-1"></a>
+
+### API とは
 
 API（Application Programming Interface）とは、コンピュータ・プログラムの開発者が、自作したプログラムを他の開発者に使ってもらうときの「手続き・使い方・決まり」の総称です。プログラム自体を指すことも、その開発文書のことを指すことも、プログラムの設計理念を指すこともあります。どうにも抽象的な用語ですが、スマートフォンのアプリ操作にも当たり前に使われる技術です。
 
@@ -38,8 +71,9 @@ API（Application Programming Interface）とは、コンピュータ・プロ�
 
 
 
+<a id="anchor0-2"></a>
 
-### 基本概念<a id="anchor0-2"></a>
+### 基本概念
 
 > [Basic Concepts \| ReadyAPI Documentation](https://support.smartbear.com/readyapi/docs/functional/tutorial/your-first-test/basic-concepts.html)をベースにした日本語ドキュメントです。
 
@@ -83,15 +117,20 @@ ReadyAPIを使用してテストを作成および実行するには、Webサー
 
 
 
+<div style="page-break-before:always"></div>
 
-## 機能テスト<a id="anchor1"></a>
+<a id="anchor1"></a>
+
+## 機能テスト
 
 > [1\. Create Functional Test \| ReadyAPI Documentation](https://support.smartbear.com/readyapi/docs/functional/tutorial/your-first-test/create-project.html)をベースにした日本語ドキュメントです。
 
 
 
 
-### 1) 機能テストの作成<a id="anchor1-1"></a>
+<a id="anchor1-1"></a>
+
+### 1) 機能テストの作成
 
 
 #### 必要要件
@@ -161,7 +200,9 @@ ReadyAPIはテストプロジェクトを作成し、テストケースを追加
 
 
 
-### 2) テストプロジェクトの探索<a id="anchor1-2"></a>
+<a id="anchor1-2"></a>
+
+### 2) テストプロジェクトの探索
 
 作成されたテストプロジェクトは、左側の「Navigator」パネルで確認できます。
 
@@ -219,7 +260,9 @@ ReadyAPIはテストプロジェクトを作成し、テストケースを追加
 
 
 
-### 3) 機能テストの変更<a id="anchor1-3"></a>
+<a id="anchor1-3"></a>
+
+### 3) 機能テストの変更
 
 テストステップをテストケースに追加し、リクエストパラメータを変更する方法を見てみましょう。**/pet/findByStatus-Request 1 Test Case**を変更します。RESTリクエストのテストステップを追加します。
 
@@ -260,7 +303,9 @@ ReadyAPIはテストプロジェクトを作成し、テストケースを追加
 
 
 
-### 4) 機能テストの実行<a id="anchor1-4"></a>
+<a id="anchor1-4"></a>
+
+### 4) 機能テストの実行
 
 ReadyAPIでは、リクエスト、テストケース、テストスイート、またはテストプロジェクト全体を実行できます。
 
@@ -324,7 +369,9 @@ ReadyAPIは、テストケースのテストステップを1つずつ実行し�
 
 
 
-### 5) 機能テストにアサーションを追加<a id="anchor1-5"></a>
+<a id="anchor1-5"></a>
+
+### 5) 機能テストにアサーションを追加
 
 [アサーション](https://support.smartbear.com/readyapi/docs/functional/assertions.html)は、ターゲットWebサービスのパフォーマンスを確認するテスト結果に適用される検証ルールです。ReadyAPIテストでは、アサーションを使用して、レスポンスコード、レスポンスヘッダー、レスポンスボディの個々の値、リクエストの実行時間を確認し、その他のチェックを行います。テストランナーは、テストステップ(リクエスト)が終了した後にアサーションを実行します。
 
@@ -415,7 +462,11 @@ ReadyAPIは、より新しいレスポンスデータを取得するたびにア
 
 
 
-## データドリブンテスト<a id="anchor2"></a>
+<div style="page-break-before:always"></div>
+
+<a id="anchor2"></a>
+
+## データドリブンテスト
 
 [Text Files as Data Sources \| ReadyAPI Documentation](https://support.smartbear.com/readyapi/docs/testing/data-driven/tutorials/text/index.html)をベースにした日本語ドキュメントです。
 
@@ -424,7 +475,9 @@ ReadyAPIは、より新しいレスポンスデータを取得するたびにア
 
 
 
-### 1) プロジェクト作成<a id="anchor2-1"></a>
+<a id="anchor2-1"></a>
+
+### 1) プロジェクト作成
 
 最初にプロジェクトを作成します。
 
@@ -469,7 +522,9 @@ https://maps.googleapis.com/maps/api/geocode/json?key=XXXXXXXX&address=
 
 
 
-### 2) データソース追加<a id="anchor2-2"></a>
+<a id="anchor2-2"></a>
+
+### 2) データソース追加
 
 データドリブンテストを実行するには、[データソース](https://support.smartbear.com/readyapi/docs/functional/steps/data-source.html)のテストステップを使用する必要があります。テストケースに追加しましょう。
 
@@ -504,7 +559,9 @@ ReadyAPIは、リクエストパラメータの値として[プロパティ拡�
 
 
 
-### 3) データソースの設定<a id="anchor2-3"></a>
+<a id="anchor2-3"></a>
+
+### 3) データソースの設定
 
 テキストファイルをデータソースとして使用するように、追加された[データソース](https://support.smartbear.com/readyapi/docs/functional/steps/data-source.html)のテストステップを構成しましょう。
 
@@ -554,7 +611,9 @@ ReadyAPIは、取得した値をデータログに表示します。
 
 
 
-### 4) リクエストの設定<a id="anchor2-4"></a>
+<a id="anchor2-4"></a>
+
+### 4) リクエストの設定
 
 データソースからのデータを使用するには、リクエストテストステップを変更する必要があります。
 
@@ -585,7 +644,9 @@ ReadyAPIは、取得した値をデータログに表示します。
 
 
 
-### 5) テストの実行と検証<a id="anchor2-5"></a>
+<a id="anchor2-5"></a>
+
+### 5) テストの実行と検証
 
 #### テストの実行
 
@@ -658,9 +719,14 @@ ReadyAPIは、「JSONPath Match Assertion」ダイアログを表示します。
 
 
 
-## 負荷テスト<a id="anchor3"></a>
 
-[Creating Your First Load Test \| ReadyAPI Documentation](https://support.smartbear.com/readyapi/docs/performance/tutorial/your-first-test/index.html) を日本語化したドキュメントです。
+<div style="page-break-before:always"></div>
+
+<a id="anchor3"></a>
+
+## 負荷テスト
+
+[Creating Your First Load Test \| ReadyAPI Documentation](https://support.smartbear.com/readyapi/docs/performance/tutorial/your-first-test/index.html)をベースにした日本語ドキュメントです。
 
 このチュートリアルではLoad Testエディターのインターフェイスについて説明し、ReadyAPIを使った負荷テストの作成方法を示します。このチュートリアルのセクションは、ReadyAPIでの負荷プロジェクトの作成方法、簡単なテストの実行、およびテスト結果の解析に関する説明をします。テストはサンプルの機能テストをエミュレートします。
 
@@ -671,7 +737,9 @@ ReadyAPIは、「JSONPath Match Assertion」ダイアログを表示します。
 
 
 
-### 1) 新規負荷テストの作成<a id="anchor3-1"></a>
+<a id="anchor3-1"></a>
+
+### 1) 新規負荷テストの作成
 
 ReadyAPIで負荷テストを作成するには
 
@@ -718,7 +786,9 @@ ReadyAPIが負荷テストを作成し、「Run Load Test」または「Add [Loc
 
 
 
-### 2) 負荷テストエディターインターフェースの概要<a id="anchor3-2"></a>
+<a id="anchor3-2"></a>
+
+### 2) 負荷テストエディターインターフェースの概要
 
 負荷テストエディターを使用して、ReadyAPIで負荷テストを表示、編集、および実行します。負荷テストエディターのサンプルビューは次のとおりです。
 
@@ -746,7 +816,8 @@ ReadyAPIが負荷テストを作成し、「Run Load Test」または「Add [Loc
 |Statistics|対象となるWebサービスにおける、テスト間のパフォーマンスメトリックの変化を確認できます。詳細については「[Test Results](https://support.smartbear.com/readyapi/docs/performance/results/statistics/index.html)」を 参照してください。|
 |Scripts|テストの開始時および終了時に使用されるスクリプトを設定します。詳細については「[Setup and Teardown Scripts](https://support.smartbear.com/readyapi/docs/performance/configure/script.html)」を 参照してください。
 
-基本機能では、「Load」ページにのみアクセスできます。他のページを操作するには、[ReadyAPI Performanceライセンス](http://smartbear.com/product/ready-api/loadui/pricing/#_ga=2.248384768.640695114.1630330748-92759339.1628599618)が必要です。
+基本機能では、「Load」ページにのみアクセスできます。他のページを操作するには、ReadyAPI Performanceライセンスが必要です。
+
 
 #### 「Load Scenarios」パネル
 
@@ -780,7 +851,9 @@ Test Steps Metricsパネルは、各TestStepの詳細メトリックを表示し
 
 
 
-### 3) 作成した負荷テストの実行<a id="anchor3-3"></a>
+<a id="anchor3-3"></a>
+
+### 3) 作成した負荷テストの実行
 
 デフォルトでは、新規作成した負荷テストは選択したテンプレート設定を使用します。
 
@@ -811,7 +884,9 @@ Scenariosパネルの任意の場所をクリックして負荷テストエデ�
 
 
 
-### 4) テスト結果の表示<a id="anchor3-4"></a>
+<a id="anchor3-4"></a>
+
+### 4) テスト結果の表示
 
 ReadyAPIが負荷テストを実行中に、サービスパフォーマンスのデータが収集されます。収集されたデータは、Global Metricsグラフ、Test Steps Metricsテーブル、およびStatisticsページで表示されます。
 
@@ -836,7 +911,9 @@ ReadyAPIが負荷テストを実行中に、サービスパフォーマンスの
 
 
 
-### 5) 負荷テストの変更<a id="anchor3-5"></a>
+<a id="anchor3-5"></a>
+
+### 5) 負荷テストの変更
 
 最初の負荷テストの実行に成功しました。いくつかのパラメーターを変更し、異なる負荷プロファイルでテストを再実行してみましょう。
 
@@ -884,7 +961,9 @@ ReadyAPIが負荷テストを実行中に、サービスパフォーマンスの
 
 
 
-### 6) 負荷テストへのアサーションの追加<a id="anchor3-6"></a>
+<a id="anchor3-6"></a>
+
+### 6) 負荷テストへのアサーションの追加
 
 [アサーション](https://support.smartbear.com/readyapi/docs/performance/configure/assertions/about.html)は、テスト実行中に対象となるWebサービスの機能を確認するテスト結果に適用される検証規則です。
 
@@ -921,6 +1000,10 @@ TestCaseを広げ、アサーションを作成するTest Stepの「Response」�
 
 
 ---
+
+以上でハンズオンは終了です。お疲れ様でした。
+
+
 
 © 2021 SmartBear Software
 
